@@ -1,0 +1,90 @@
+
+# Третий семинар
+
+**1)Создать файл**
+
+Инициализация файла: ivanhudan@MacBook-Air-Ivan neTora % **git init**
+
+2)Смотрим статус ivanhudan@MacBook-Air-Ivan neTora % **git status**
+ПЕРФЫЙ ФАЙЛ НЕ ОТСЛЕЖИВАЕМЫЙ
+
+3)Вводим не отслеживаемый файл через пробел 
+ivanhudan@MacBook-Air-Ivan neTora % **git add** Евангелие\ Матфея.md
+
+4)Проверяем статус
+ivanhudan@MacBook-Air-Ivan neTora % **git status**
+
+5)проверяем первый файл ivanhudan@MacBook-Air-Ivan neTora % **git log**
+
+# Проводим работу в строке:
+Сохраняем в строке:
+
+6)Фиксируем ветку
+ivanhudan@MacBook-Air-Ivan neTora % **git add** Евангелие\ Матфея.md
+
+7)Проверяем статус
+ivanhudan@MacBook-Air-Ivan neTora % **git status** Создаем комментарий что делали
+В ветке
+
+ivanhudan@MacBook-Air-Ivan neTora % **git commit -m** "создал фото"СОЗДАНИЕ ВЕТКИ(branch-ветка перевод)
+
+1)Проверяем в какой ветке находимся ivanhudan@MacBook-Air-Ivan neTora % **git branch** 2)Создание ветки: ivanhudan@MacBook-Air-Ivan neTora % git branch Матфея_1гл
+
+# Проверяем 
+ivanhudan@MacBook-Air-Ivan neTora % **git branch**
+Видим в которой мы находимся и созданную ветку
+
+#ПЕРЕХОДИМ НАВЕТКУ
+
+1)Выполняем команду
+ivanhudan@MacBook-Air-Ivan neTora % **git checkout** Матфея_1гл
+
+# ПРОВЕРЯЕМ СОВЕРШЕНИЯ ПЕРЕХОДА 
+2)ivanhudan@MacBook-Air-Ivan neTora % **git branch** РАБОТАЕМ В СТРОКЕ СОХРАНЯЕМ
+
+1)Вводим команду главной ветки незабываем пробел между названием ветки \ если файл из двух слов
+ivanhudan@MacBook-Air-Ivan neTora % **git add** Евангелие\ Матфея.md 
+
+2)Создаем и Оставляем коммит
+ivanhudan@MacBook-Air-Ivan neTora % **git commit -m** "добавил гл и комментарий"  ПРОВЕРЯЕМ
+
+ivanhudan@MacBook-Air-Ivan neTora % **git log**
+Видим коммиты ветки
+**git log  - -graph** посмотреть ветки
+
+# ПРОВЕРЯЕМ В КАКОЙ ВЕТКЕ НАХОДИМСЯ
+ivanhudan@MacBook-Air-Ivan neTora % **git branch**
+
+# ПРОВЕРЯЕМ СТАТУС ВСЕ ЛИ В ПОРЯДКЕ
+ivanhudan@MacBook-Air-Ivan neTora % **git status** 
+
+ПЕРЕХОДИМ В ВЕТКУ МАСТЕР(МАИН) **git checkout master**
+
+# СОЕДИНЯЕМ (ИЛИ СЛИВАЕМ) ТАКОЙ КОМАНДОЙ
+ **git merge** название ветки
+ivanhudan@MacBook-Air-Ivan neTora % **git merge** Матфея_1гл
+В строке увидим изминения
+
+# ПРОВЕРЯЕМ КОМАНДОЙ
+ivanhudan@MacBook-Air-Ivan neTora % git log 
+
+# СЛИЯНИЕ ПРОИЗОШЛО
+
+МОЖНО УДАЛИТЬ СЛИТУЮ ВЕТКУ 
+ivanhudan@MacBook-Air-Ivan neTora % **git branch -d** Матфея_1гл
+ЕСЛИ НЕ ПОМОГЛО
+ivanhudan@MacBook-Air-Ivan neTora % **git branch -D** Матфея_1гл
+
+# ПРОВЕРЯЕМ
+
+ivanhudan@MacBook-Air-Ivan neTora % **git branch**
+Видим что одной ветки нет
+
+# СЛИЯНИЕ С УДАЛЕННЫМ РЕПОЗИТОРИЕМ
+
+ivanhudan@MacBook-Air-Ivan NeTora.md % **git pull**
+Стягивать в свой с удаленного рипозитория
+
+vanhudan@MacBook-Air-Ivan NeTora.md % **git push** 
+Отправлять в удаленный рипозиторий
+
